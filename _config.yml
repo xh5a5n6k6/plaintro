@@ -1,0 +1,58 @@
+# Site configuration
+
+title: 'Chia-Yu (Hank) Chou'
+author: 'Chia-Yu Chou'
+
+# Starting year shown in the footer
+# ex. Copyright [start-year]-[this-year]
+start-year: 2020
+
+# Pagination setup
+paginate: 2
+paginate_path: "/blog/page:num/"
+
+# Custom blog post file path
+permalink: /blog/:year/:title.html
+
+# Custom path to blog archive
+# (feed is auto-generated at url/feed.xml through jekyll-feed)
+blog:
+  archive: '/blog/archive.html'
+  feed: '/feed.xml'
+
+# Default website url
+url: https://xh5a5n6k6.github.io
+
+# Menu pages shown in the top-navigation
+#
+# it's recommended to use up to five pages.
+menu:
+  - {name: 'Home', url: '/index.html'}
+
+  # If using blog page, url MUST match paginate_path
+  # set above
+  - {name: 'Blog', url: '/blog/'}
+  - {name: 'Portfolio', url: '/portfolio/'}
+  - {name: 'Resume', url: '/resume.html'}
+  - {name: 'About', url: '/about.html'}
+
+# Social icons shown in the top-navigation
+# 
+# it's recommended to use up to four icons.
+#
+# social icons are powered by Font Awesome
+# more icons can be found there: https://fontawesome.com/
+social:
+  - {icon: 'github-square', link: 'https://www.github.com/xh5a5n6k6/'}
+  - {icon: 'vimeo-square', link: 'https://vimeo.com/user108255640/'}
+  - {icon: 'twitter-square', link: 'https://twitter.com/xh5a5n6k6/'}
+  - {icon: 'linkedin', link: 'https://www.linkedin.com/in/chiayu-hank-chou/'}
+
+
+
+
+# Plugins used in plaintro theme
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-feed

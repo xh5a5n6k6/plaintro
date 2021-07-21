@@ -3,10 +3,5 @@
 source "https://rubygems.org"
 gemspec
 
-=begin
-    webrick is no longer a bundled gem in Ruby 3.0,
-    so it needs adding manually.
-
-    Reference: https://github.com/jekyll/jekyll/issues/8523
-=end
-gem "webrick", "~> 1.7"
+# Performance-booster for watching directories on Windows
+gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
