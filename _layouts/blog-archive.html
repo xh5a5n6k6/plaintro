@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<h1>Archive</h1>
+
+{% assign posts = site.posts%}
+{% for post in posts %}
+    {% if post == posts[0] %}
+        <h1 class="site-blog-post-title">{{ post.date | date: "%Y" }}</h1>
+        <hr>
+    {% else %}
+        {% comment %}
+            Tricky part here, the post order in posts is reverse,
+            but post.next points to 'actual' next post in forward order
+        {% endcomment %}
+
+        {% assign previous_year = post.next.date | date: "%Y" %}
+        {% assign current_year = post.date | date: "%Y" %}
+        {% if current_year != previous_year %}
+            <h1 class="site-blog-post-title">{{ current_year }}</h1>
+            <hr>
+        {% endif %}
+    {% endif %}
+
+    <p class="site-blog-archive">
+        {{ post.date | date: "%b %-d" }} | <a href="{{ post.url }}">{{ post.title }}</a>
+    </p>
+{% endfor %}
