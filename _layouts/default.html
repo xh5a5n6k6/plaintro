@@ -1,1 +1,24 @@
-{{ content }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include head.html %}
+</head>
+
+<body>
+    <header class="site-header">
+        {% include header.html %}
+    </header>
+
+    <nav class="site-topnav">
+        {% include topnav.html %}
+    </nav>
+
+    <div = class="site-content">
+        {{ content }}
+    </div>
+
+    <footer class="site-footer">
+        {% include footer.html %}
+    </footer>
+</body>
+</html>
