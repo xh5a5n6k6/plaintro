@@ -1,0 +1,16 @@
+<div class="site-topnav-content">
+    <nav class="site-menu">
+        {% for item in site.menu %}
+            {% if item == site.menu.last %}
+                <a href="{{ item.url }}">{{ item.name }}</a>
+            {% else %}
+                <a href="{{ item.url }}">{{ item.name }}</a> | 
+            {% endif %}
+        {% endfor %}
+    </nav>
+    <nav class="site-social">
+        {% for item in site.social %}
+            <a href="{{ item.link }}" target="_blank"><i class="fab fa-{{ item.icon }}" aria-hidden="true"></i></a> 
+        {% endfor %}
+    </nav>
+</div>
