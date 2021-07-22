@@ -1,10 +1,10 @@
 # Site configuration
 
-title: 'Chia-Yu (Hank) Chou'
-author: 'Chia-Yu Chou'
+title: 'Your Title Here'
+author: 'Author Name Here'
 
 # Starting year shown in the footer
-# ex. Copyright [start-year]-[this-year]
+# i.e. Copyright [start-year]-[this-year]
 start-year: 2020
 
 # Pagination setup
@@ -34,7 +34,6 @@ menu:
   - {name: 'Blog', url: '/blog/'}
   - {name: 'Portfolio', url: '/portfolio/'}
   - {name: 'Resume', url: '/resume.html'}
-  - {name: 'About', url: '/about.html'}
 
 # Social icons shown in the top-navigation
 # 

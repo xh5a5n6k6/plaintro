@@ -4,7 +4,7 @@ Gem::Specification.new do |spec|
   spec.name          = "plaintro"
   spec.version       = "0.1.0"
   spec.authors       = ["Chia-Yu Chou"]
-  spec.email         = ["chiayu.hank.chou@gmail.com"]
+  spec.email         = ["xh5a5n6k6@gmail.com"]
 
   spec.summary       = "Jekyll theme designed for personal website."
   spec.homepage      = "https://github.com/xh5a5n6k6/plaintro/"
