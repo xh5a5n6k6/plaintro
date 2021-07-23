@@ -1,6 +1,46 @@
 
-@import url(normalize.css);
+/**
+ * For syntax highlight part, using the same setting
+ * of Jekyll minima theme with classic skin
+ * 
+ * Reference:
+ * https://github.com/jekyll/minima/blob/master/_sass/minima/_base.scss
+ */
+pre, code { 
+    font-size: 15px; 
+    border: 1px solid #e8e8e8;
+    border-radius: 3px; 
+    background-color: #eef; 
+}
 
+code { 
+    padding: 1px 5px; 
+}
+
+pre { 
+    padding: 8px 12px; 
+    overflow-x: auto; 
+}
+
+pre > code { 
+    border: 0; 
+    padding-right: 0; 
+    padding-left: 0; 
+}
+
+/**
+ *  extend highlight part to content width
+ */
+.highlight, .highlighter-rouge {
+    width: 100%;
+    margin: 0;
+}
+
+
+
+/*----------------------------------------------
+    Main plaintro CSS
+------------------------------------------------*/
 
 body {
     width: 100%;
@@ -11,6 +51,11 @@ body {
     background-color: #eeeeee;
     color: #3C3C3C;
     font-family: sans-serif;
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
 }
 
 ul, ol {
@@ -41,6 +86,12 @@ a:hover {
     color: #B0C4DE;
 }
 
+.site-wrapper {
+    min-height: 100vh;
+    display: flex; 
+    flex-direction: column;
+}
+
 .site-header a, 
 .site-header a:link, 
 .site-header a:visited,
@@ -59,7 +110,7 @@ a:hover {
 .site-header,
 .site-topnav,
 .site-footer {
-    width: auto;
+    width: 100%;
     text-align: center;
 }
 
@@ -95,7 +146,10 @@ a:hover {
 }
 
 .site-footer {
-    padding: 0.5%;
+    padding-top: 1.0%;
+    padding-bottom: 0.5%;
+
+    margin-top: auto;
 }
 
 .site-footer-content {
@@ -125,9 +179,11 @@ a:hover {
     padding-top: 0.5%;
 }
 
-/*
+
+
+/*----------------------------------------------
     Blog related CSS
-*/
+------------------------------------------------*/
 
 .site-blog-title-left {
     float: left;
@@ -179,14 +235,42 @@ a:hover {
     display: block;
 }
 
-/*
+
+
+/*----------------------------------------------
     Portfolio related CSS
-*/
+------------------------------------------------*/
+
+.site-portfolio-section {
+    display: flex;
+}
+
+.site-portfolio-section .site-portfolio-thumbnail {
+    margin-bottom: 1.0em;
+    margin-top: 0;
+    margin-left: 0;
+    width: 43%;
+}
+
+.site-portfolio-thumbnail img {
+    margin-top: 1.0em;
+}
+
+.site-portfolio-section .site-portfolio-content {
+    margin-top: 0;
+    margin-right: 0;
+    width: 51%;
+}
+
+.site-portfolio-content h1 {
+    font-size: 1.8em;
+}
 
 
-/*
+
+/*----------------------------------------------
     Resume related CSS
-*/
+------------------------------------------------*/
 
 div.site-resume h1 {
     line-height: normal;
@@ -219,9 +303,11 @@ div.site-resume h1::after {
 }
 
 
-/*
+
+/*----------------------------------------------
     For responsive web content
-*/
+------------------------------------------------*/
+
 @media only screen and (max-width: 1100px) {
     .site-header-content,
     .site-topnav-content,
