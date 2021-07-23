@@ -5,20 +5,22 @@
 </head>
 
 <body>
-    <header class="site-header">
-        {% include header.html %}
-    </header>
+    <div class="site-wrapper">
+        <header class="site-header">
+            {% include header.html %}
+        </header>
 
-    <nav class="site-topnav">
-        {% include topnav.html %}
-    </nav>
+        <nav class="site-topnav">
+            {% include topnav.html %}
+        </nav>
 
-    <div class="site-content">
-        {{ content }}
+        <div class="site-content">
+            {{ content }}
+        </div>
+
+        <footer class="site-footer">
+            {% include footer.html %}
+        </footer>
     </div>
-
-    <footer class="site-footer">
-        {% include footer.html %}
-    </footer>
 </body>
 </html>

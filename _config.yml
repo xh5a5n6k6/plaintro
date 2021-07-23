@@ -5,10 +5,13 @@ author: 'Author Name Here'
 
 # Starting year shown in the footer
 # i.e. Copyright [start-year]-[this-year]
+#
+# if you only want to show this year, edit this value to blank.
+# i.e. Copyright [this-year]
 start-year: 2020
 
 # Pagination setup
-paginate: 2
+paginate: 4
 paginate_path: "/blog/page:num/"
 
 # Custom blog post file path

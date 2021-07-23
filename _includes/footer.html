@@ -1,3 +1,7 @@
 <div class="site-footer-content">
-    <p class="site-footer-p">Copyright &copy; {{ site.start-year }}-{{ site.time | date: '%Y' }} {{ site.author }} | Jekyll theme <a href="https://github.com/xh5a5n6k6/plaintro/">plaintro</a> by <a href="https://xh5a5n6k6.github.io/">Chia-Yu Chou</a></p>
+    {% if site.start-year %}
+        <p class="site-footer-p">Copyright &copy; {{ site.start-year }}-{{ site.time | date: '%Y' }} {{ site.author }} | Jekyll theme <a href="https://github.com/xh5a5n6k6/plaintro/">plaintro</a> by <a href="https://xh5a5n6k6.github.io/">Chia-Yu Chou</a></p>
+    {% else %}
+        <p class="site-footer-p">Copyright &copy; {{ site.time | date: '%Y' }} {{ site.author }} | Jekyll theme <a href="https://github.com/xh5a5n6k6/plaintro/">plaintro</a> by <a href="https://xh5a5n6k6.github.io/">Chia-Yu Chou</a></p>
+    {% endif %}
 </div>

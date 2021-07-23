@@ -1,0 +1,12 @@
+<div class="site-portfolio-section">
+    <div class="site-portfolio-thumbnail">
+        <a href="{{ include.url }}"><img src="{{ include.image }}"></img></a>
+    </div>
+    <div class="site-portfolio-content">
+        {% capture description %}
+            {% include {{ include.description }} %}
+        {% endcapture %}
+
+        {{ description | markdownify }}
+    </div>
+</div>
