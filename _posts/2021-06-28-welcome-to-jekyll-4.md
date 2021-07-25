@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll! Test 4 with Short Content"
 date:   2021-06-28
-author: Author MA
+author: Jekyll
 categories: jekyll update
 ---
 

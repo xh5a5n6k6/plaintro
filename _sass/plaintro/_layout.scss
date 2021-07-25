@@ -242,12 +242,11 @@ a:hover {
 ------------------------------------------------*/
 
 .site-portfolio-section {
+    margin-bottom: 0.5em;
     display: flex;
 }
 
 .site-portfolio-section .site-portfolio-thumbnail {
-    margin-bottom: 1.0em;
-    margin-top: 0;
     margin-left: 0;
     width: 43%;
 }
@@ -263,7 +262,9 @@ a:hover {
 }
 
 .site-portfolio-content h1 {
+    margin-top: 0.5em;
     font-size: 1.8em;
+    line-height: 1.25em;
 }
 
 
@@ -315,6 +316,30 @@ div.site-resume h1::after {
     .site-content {
         width: 80%;
     }
+
+    .site-portfolio-section .site-portfolio-thumbnail {
+        width: 378.4px;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .site-portfolio-section .site-portfolio-thumbnail {
+        flex: 0 0 340px;
+    }
+
+    .site-portfolio-content {
+        font-size: 98%;
+    }
+
+    .site-portfolio-content h1 {
+        font-size: 1.7em;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .site-portfolio-section .site-portfolio-thumbnail {
+        margin-right: 1.5em;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -328,6 +353,32 @@ div.site-resume h1::after {
 
     .site-blog-next {
         padding-right: 12.5%;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .site-portfolio-section {
+        flex-direction: column;
+    }
+
+    .site-portfolio-section {
+        width: 480px;
+    }
+
+    .site-portfolio-section .site-portfolio-thumbnail {
+        flex: auto;
+        margin-bottom: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .site-portfolio-section .site-portfolio-content {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .site-portfolio-content h1 {
+        margin: 0;
     }
 }
 
@@ -405,6 +456,12 @@ div.site-resume h1::after {
 
     .site-blog-next {
         padding-right: 0;
+    }
+}
+
+@media only screen and (max-width: 561px) {
+    .site-portfolio-section {
+        width: 95%;
     }
 }
 

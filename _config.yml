@@ -4,11 +4,11 @@ title: 'Your Title Here'
 author: 'Author Name Here'
 
 # Starting year shown in the footer
-# i.e. Copyright [start-year]-[this-year]
+# i.e. Copyright [start_year]-[this_year]
 #
 # if you only want to show this year, edit this value to blank.
-# i.e. Copyright [this-year]
-start-year: 2020
+# i.e. Copyright [this_year]
+start_year: 2020
 
 # Pagination setup
 paginate: 4
@@ -24,13 +24,15 @@ blog:
   feed: '/feed.xml'
 
 # Default website url
-url: https://xh5a5n6k6.github.io
+url: https://xh5a5n6k6.github.io/plaintro
+# Page title will link to defualt_url
+default_url: '/'
 
 # Menu pages shown in the top-navigation
 #
 # it's recommended to use up to five pages.
 menu:
-  - {name: 'Home', url: '/index.html'}
+  - {name: 'Home', url: '/'}
 
   # If using blog page, url MUST match paginate_path
   # set above

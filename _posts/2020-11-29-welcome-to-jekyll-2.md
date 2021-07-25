@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll! Test 2"
 date:   2020-11-29
-author: Jekyll Author V
+author: Jekyll
 categories: jekyll update
 ---
 

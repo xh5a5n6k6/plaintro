@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll! Test 3"
 date:   2021-06-23
-author: Author KL
+author: Jekyll
 categories: jekyll update
 ---
 
