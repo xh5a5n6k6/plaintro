@@ -2,9 +2,9 @@
     <nav class="site-menu">
         {% for item in site.menu %}
             {% if item == site.menu.last %}
-                <a href="{{ item.url }}">{{ item.name }}</a>
+                <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
             {% else %}
-                <a href="{{ item.url }}">{{ item.name }}</a> | 
+                <a href="{{ item.url | relative_url }}">{{ item.name }}</a> | 
             {% endif %}
         {% endfor %}
     </nav>

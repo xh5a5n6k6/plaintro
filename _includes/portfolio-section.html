@@ -1,6 +1,6 @@
 <div class="site-portfolio-section">
     <div class="site-portfolio-thumbnail">
-        <a href="{{ include.url }}"><img src="{{ include.image }}"></a>
+        <a href="{{ include.url | relative_url }}"><img src="{{ include.image | relative_url }}"></a>
     </div>
     <div class="site-portfolio-content">
         {% capture description %}

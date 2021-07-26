@@ -1,5 +1,5 @@
 
-# [Project A with h1 Tag](/portfolio/project-a.html)
+# [Project A with h1 Tag]({{ '/portfolio/project-a.html' | relative_url }})
 
 Describe what Project A is.
 
