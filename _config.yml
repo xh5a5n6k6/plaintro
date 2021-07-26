@@ -24,7 +24,7 @@ blog:
   feed: '/feed.xml'
 
 # Default website url
-url: https://xh5a5n6k6.github.io/plaintro
+url: https://xh5a5n6k6.github.io
 # Page title will link to defualt_url
 default_url: '/'
 
