@@ -28,6 +28,10 @@ url: https://xh5a5n6k6.github.io
 # Page title will link to defualt_url
 default_url: '/'
 
+# google analytics track ID setup
+google_analytics_id:
+
+
 # Menu pages shown in the top-navigation
 #
 # it's recommended to use up to five pages.
