@@ -252,6 +252,7 @@ a:hover {
 }
 
 .site-portfolio-thumbnail img {
+    margin-bottom: 0.9em;
     margin-top: 1.0em;
 }
 
@@ -370,6 +371,10 @@ div.site-resume h1::after {
         margin-bottom: 0;
         margin-right: 0;
         width: 100%;
+    }
+
+    .site-portfolio-thumbnail img {
+        margin-bottom: 0;
     }
 
     .site-portfolio-section .site-portfolio-content {
