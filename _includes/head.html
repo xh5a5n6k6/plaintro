@@ -14,6 +14,10 @@
 {% seo %}
 {% feed_meta %}
 
+{% if site.google_analytics_id and jekyll.environment == 'production' %}
+    {% include google-analytics.html %}
+{% endif %}
+
 <!------------------------------------- 
     Link icons powered by Font Awesome
     -------------------------------------->

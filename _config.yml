@@ -1,7 +1,7 @@
 # Site configuration
 
-title: 'Your Title Here'
-author: 'Author Name Here'
+title: 'Plaintro'
+author: 'Author Name'
 
 # Starting year shown in the footer
 # i.e. Copyright [start_year]-[this_year]
@@ -28,13 +28,17 @@ url: https://xh5a5n6k6.github.io
 # Page title will link to defualt_url
 default_url: '/'
 
+# google analytics Track/Measurement ID setup
+google_analytics_id:
+
+
 # Menu pages shown in the top-navigation
 #
 # it's recommended to use up to five pages.
 menu:
   - {name: 'Home', url: '/'}
 
-  # If using blog page, url MUST match paginate_path
+  # If using blog page, its url MUST match [paginate_path]
   # set above
   - {name: 'Blog', url: '/blog/'}
   - {name: 'Portfolio', url: '/portfolio/'}
