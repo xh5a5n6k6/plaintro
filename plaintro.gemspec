@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "plaintro"
-  spec.version       = "0.1.1"
+  spec.version       = "0.2.0"
   spec.authors       = ["Chia-Yu Chou"]
   spec.email         = ["xh5a5n6k6@gmail.com"]
 
