@@ -3,7 +3,7 @@ layout: resume
 title: Resume
 ---
 
-# Paragraph using h1 tag
+# Category using h1 tag
 ## Title using h2 tag | Whatever | Whatever...
 - ### Subtitle using h3 tag with list | Whatever...
     - Content using normal font-size with list
